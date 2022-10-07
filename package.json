@@ -1,6 +1,6 @@
 {
   "name": "aynur-ui",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "core/index.js",
   "scripts": {
