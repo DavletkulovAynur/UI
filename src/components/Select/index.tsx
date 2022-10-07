@@ -1,7 +1,7 @@
 import React from "react";
-import Select from "react-select";
+import ReactSelect from "react-select";
 import StateManagedSelect from "react-select";
 
-export const ReactSelect: StateManagedSelect = ({ ...props }) => {
-  return <Select {...props} />;
+export const Select: StateManagedSelect = ({ ...props }) => {
+  return <ReactSelect {...props} />;
 };

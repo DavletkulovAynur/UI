@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { ReactSelect } from "../components/Select/index";
+import { Select } from "../index";
 
 const animals = [
   {
@@ -27,19 +27,17 @@ const animals = [
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: "ModuleUI/Select",
-  component: ReactSelect,
+  component: Select,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     options: {
       description: "test",
     },
   },
-} as ComponentMeta<typeof ReactSelect>;
+} as ComponentMeta<typeof Select>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof ReactSelect> = (args) => (
-  <ReactSelect {...args} />
-);
+const Template: ComponentStory<typeof Select> = (args) => <Select {...args} />;
 
 export const General = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
